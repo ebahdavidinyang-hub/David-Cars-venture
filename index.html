@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Cars Venture</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff3c00;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff3c00;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:10px;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#ff3c00;
+    color:white;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#d63100;
+}
+
+/* Models Section */
+.models{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.models h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.car-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.car-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.car-card:hover{
+    transform:translateY(-10px);
+}
+
+.car-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.car-card h3{
+    margin:15px 0;
+}
+
+.car-card p{
+    padding:0 15px 20px;
+}
+
+.car-card .btn{
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+/* Features */
+.features{
+    background:#111;
+    color:white;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.features h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.feature-boxes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:#1e1e1e;
+    padding:30px;
+    border-radius:10px;
+}
+
+.feature h3{
+    color:#ff3c00;
+    margin-bottom:15px;
+}
+
+/* Footer */
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer a{
+    color:#ff3c00;
+    text-decoration:none;
+    margin:0 10px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">David Cars Venture</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Models</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Drive the Future</h1>
+        <p>Luxury, Performance, and Innovation in Every Journey</p>
+        <a href="#" class="btn">Explore Models</a>
+    </div>
+</section>
+
+<!-- Car Models -->
+<section class="models">
+    <h2>Featured Models</h2>
+
+    <div class="car-container">
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="">
+            <h3>Velocity X1</h3>
+            <p>A powerful sports sedan designed for speed and comfort.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=80" alt="">
+            <h3>Velocity SUV Pro</h3>
+            <p>Built for adventure with premium technology and safety.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80" alt="">
+            <h3>Velocity E-Lux</h3>
+            <p>Our next-generation electric vehicle with zero emissions.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+    <h2>Why Choose David Cars Venture ?</h2>
+
+    <div class="feature-boxes">
+
+        <div class="feature">
+            <h3>Performance</h3>
+            <p>Experience unmatched power, speed, and driving dynamics.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Safety</h3>
+            <p>Advanced driver assistance and world-class safety systems.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Innovation</h3>
+            <p>Cutting-edge technology designed for the future of mobility.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p><strong>David Cars Venture</strong></p>
+    <p>123 Premium Drive, Lagos, Nigeria</p>
+    <p>Phone: +234 8066830325</p>
+
+    <br>
+
+    <a href="#">Facebook</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">Twitter</a>
+
+    <p style="margin-top:15px;">
+        © 2026 David cars venture. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
